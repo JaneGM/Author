@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 31px;
+    padding-left: 135px;
+}
+.menu{
+
+}
+.section-carousel{
+    height: 567px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-carousel{
+    max-width: 1440px;
+    margin: auto;
+}.block{
+    max-width: 1385px;
+ }
+.heading{
+    font-size: 63px;
+    text-align: center;
+    color: white;
+    margin-top: 140px;
+    font-family: 'Open Sans', sans-serif
+ }
+.heading-info{
+    font-size: 23px;
+    text-align: center;
+    color: white;
+    margin-top: 45px;
+    font-family: 'Open Sans', sans-serif
+}
+ .item{
+    text-align: center;
+    border: white 3px solid;
+    border-radius: 5px;
+    padding: 21px 34px 21px 41px;
+    height: 62px;
+    width: 225px;
+    margin-top: 58px;
+
+
+}
+.item a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+}
+/*.owl-carousel .owl-stage:after{*/
+/*    height: 564px;*/
+/*    text-align: center;*/
+/*}*/
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    left: 29px;
+    top: 300px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    outline: none;
+    color: #49cbcd;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-prev:before {
+     content: "\f053";
+ }
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    right: 29px;
+    top: 300px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    outline: none;
+    color: #49cbcd;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-next:before{
+    content: "\f054";
+}
