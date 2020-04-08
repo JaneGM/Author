@@ -55,7 +55,7 @@ a {
     font-family: 'Open Sans', sans-serif
 }
 
-a:hover {
+header a:hover {
     background-color: #1aaaac;
 }
 
@@ -132,19 +132,18 @@ a:hover {
 }
  .item{
     text-align: center;
-    border: white 3px solid;
-    border-radius: 5px;
-    height: 62px;
-    width: 225px;
     margin-top: 58px;
-
-
 }
 .item a{
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 23px;
+    border: white 3px solid;
+    border-radius: 5px;
+    padding: 21px 34px 21px 41px;
+    text-align: center;
+    display: inline-block;
 }
 /*.owl-carousel .owl-stage:after{*/
 /*    height: 564px;*/
