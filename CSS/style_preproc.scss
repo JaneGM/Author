@@ -1,20 +1,16 @@
-@import "Style.css";
-@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap";
-@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "style-header";
+@import "style-carousel";
+@import "style-team";
+@import "style-product";
+@import "style-footer";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
-
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap";
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "bootstrap-theme.css";
+@import "bootstrap.min.css";
 $font-family:'Open Sans', sans-serif;
-@mixin li-3-8(){
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
-  height: 47px;
-  font-family: $font-family;
-  font-size: 14px;
-  color: #8c9299;
-  background-color: white;
-  padding-top: 18px;
-}
+
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content;
@@ -26,191 +22,9 @@ $font-family:'Open Sans', sans-serif;
   box-sizing: border-box;
   font-size: inherit;
 }
-header{
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  .logo{
-     margin-top: 31px;
-    margin-left: 135px;
-    @include max-screen(1024px){
-      margin-left: 90px;
-    }
-    @include max-screen(768px){
-    margin-left: 60px;
-    }
-    .item-logo{
-      text-align: center;
-    }
-  }
-}
-
-.menu{
-  width: 700px;
-  text-align: center;
-  margin-right: 70px;
-  @include max-screen(768px){
-    width: 500px;
-    margin-right: 30px;
-  }
-
-  }
 
 
-header{
-  nav{
-    height: 40px;
-    margin: 40px auto;
-    background-color: rgba(130, 213, 214, 0.7);
-    text-align: center;
-    border-radius: 4px;
-    ul{
-      list-style: none;
-    }
-  }
-}
 
-.main {
-  display: flex;
-  justify-content: center;
-
-}
-.main > li {
-  margin: 0 2%;
-  @include max-screen(768px){
-  width: 60px
-  }
-  @include max-screen(414px){
-
-  }
-}
-a {
-  text-decoration: none;
-  color: black;
-  text-transform: capitalize;
-  font-family: monospace;
-  display: block;
-  padding: 10px 15px;
-  font-size: 16px;
-  transition: background-color 0.5s ease-in-out;
-
-  font-family: 'Open Sans', sans-serif
-}
-
-header a:hover {
-  background-color: #1aaaac;
-}
-
-.drop li {
-  opacity: 0;
-  transform-origin: top center;
-}
-
-.drop li a {
-  background-color: rgba(26, 170, 172, 0.7);
-  padding: 10px 0;
-}
-
-
-.product{
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: space-around;
-  @include max-screen(414px){
-    flex-direction: column;
-    align-items: center;
-  }
-  .product-1{
-    width: 370px;
-    height: 520px;
-    margin-top: 120px;
-    margin-bottom: 100px;
-    @include max-screen(1024px){
-      width: 300px;
-    }
-    @include max-screen(768px){
-      width: 240px;
-    }
-
-    nav{
-      background-color: #f8f9fb;
-      ul{
-        text-align: center;
-        list-style: none;
-
-          li:first-of-type{
-            height: 76px;
-            background-color: #485460;
-            color: white;
-            font-size: 26px;
-            font-family: $font-family;
-            padding-top: 26px;
-          }
-          li:nth-of-type(2){
-            height: 68px;
-            background-color: #f8f9fb;
-            font-family: $font-family;
-            font-size: 20px;
-            color: #485460;
-            padding-top: 28px;
-          }
-          li:nth-of-type(3){
-           @include li-3-8()
-          }
-          li:nth-of-type(4){
-          @include li-3-8()
-          }
-          li:nth-of-type(5){
-            @include li-3-8()
-          }
-          li:nth-of-type(6){
-            @include li-3-8()
-          }
-          li:nth-of-type(7){
-            @include li-3-8()
-          }
-          li:nth-of-type(8){
-            @include li-3-8()
-          }
-          li:last-of-type{
-            height: 98px;
-            background-color: #f8f9fb;
-            padding-top: 29px;
-            a{
-              height: 40px;
-              width: 170px;
-              border-radius: 3px;
-              background-color: #788492;
-              color: white;
-              font-size: 17px;
-              font-family: $font-family;
-              display: inline-block;
-              text-align: center;
-
-            }
-          }
-      }
-    }
-  }
-  .product-2{
-    @extend .product-1;
-      nav{
-        ul{
-          li:first-of-type{
-            background-color: #49cbcd;
-          }
-          li:last-of-type{
-            a{
-              background-color: #49cbcd;
-            }
-          }
-        }
-      }
-  }
-  .product-3{
-    @extend .product-1;
-  }
-}
 
 
 

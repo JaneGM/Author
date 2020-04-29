@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
 
     $('.owl-carousel').owlCarousel({
@@ -10,11 +9,20 @@ $(document).ready(function(){
 
         responsive:{
             0:{
-                items:1
+                items:1,
+                dots: true,
+                nav: false
+            },
+            678:{
+                items:1,
+                dots: false,
+                nav: true
             },
 
             1000:{
-                items:1
+                items:1,
+                dots: false,
+                nav: true
             }
         }
     });
