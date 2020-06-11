@@ -40,6 +40,7 @@
   font-family: 'Open Sans', sans-serif;
   @include max-screen(992px){
     font-size: 53px;
+    margin: 80px 0 0 0;
   }
   @include max-screen(678px){
     font-size: 35px;
