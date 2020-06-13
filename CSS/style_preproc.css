@@ -36,7 +36,7 @@
     width: 100%; }
 @media screen and (max-width: 767px) {
   .header .container .navbar-nav {
-    background-color: #bbe0d6;
+    background-color: white;
     text-align: center; } }
 
 /*карусель*/
